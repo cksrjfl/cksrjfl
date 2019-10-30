@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700&display=swap&subset=korean');
+
+
+header .row > div:nth-child(1) > a > img { display:none; }
+header .row > div:nth-child(1) > a { position:relative; text-decoration:none; }
+header .row > div:nth-child(1) > a::before { content:'솔게더'; display:block; margin: 0 0 0 35px; font-size:50px; color:#AADBFF; text-shadow: 3px 3px 5px #14148C; line-height:1.2;font-family: 'Nanum Pen Script', cursive; }
+
+html
+{
+    z-index: 999;
+    background-image: url('https://github.com/cksrjfl/cksrjfl/blob/master/maple.png?raw=true');
+     
+    -webkit-animation: snow 10s linear infinite;
+
+    -moz-animation: snow 10s linear infinite;
+
+    -ms-animation: snow 10s linear infinite;
+
+    animation: snow 10s linear infinite;
+}
+
+header
+{
+background: white;
+}
+
+header #right-search-form>input[type=text]
+{
+border: 3px solid #BEEFFF;
+}
+
+header #header-bar>.row 
+{
+border-top: 5px solid #BEEFFF;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+}
+
+#main .menu-wrapper>.header 
+{
+background: #BEEFFF;
+}
+
+body
+{
+font-family: 'Nanum Myeongjo', serif;
+}
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover 
+{
+    background: #f6f0ff;
+}
+
+#article-list #article-list-category
+{
+    border-top: 2px solid #BEEFFF;
+}
+
+#content-area
+{
+background-image: linear-gradient(white 5%,#0078FF);
+ }
+
+footer
+{
+background: linear-gradient(#0078FF ,black);
+}
+
+@keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
+
+ 
+
+@-moz-keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
+
+@-webkit-keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+ 50% {}
+
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
+
+  
+
+@-ms-keyframes snow {
+
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+
+}
