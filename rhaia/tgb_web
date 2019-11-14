@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700&display=swap&subset=korean');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+html {
+  background: linear-gradient(to bottom, 	#87CEFA, 	#E0FFFF);
+  height: auto !important;
+}
+body {
+letter-spacing: -0.05em !important;
+  background: transparent;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 전체 쉐도우 */
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 로고밑 NAV bar */
+
+header #header-bar>.row {
+  border-top: 4px solid #87CEFA	;
+  border-right: none;
+  border-bottom: none;
+}
+
+/* 헤더 배너 */
+
+header .row>div:nth-child(1)>a::before  {
+  content: '먐 Club';
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Nanum Pen Script', cursive;
+    text-align: center;
+    font-size: 90px;
+    display: block;
+    width: 1100px;
+    height: 90px;
+    background: url() no-repeat;
+    background-size: auto 50px;
+
+/*네온 적용 코드*/
+animation: neon 1s ease infinite;
+  -moz-animation: neon 1s ease infinite;
+  -webkit-animation: neon 1s ease infinite;
+}
+header .row>div:nth-child(1)>a>img {
+  display:none;
+}
+header .row > div:nth-child(1) > a { 
+position:relative; text-decoration:none;
+ }
+
+/* 제목 네온 효과 적용 애니메이션*/
+
+@keyframes neon
+{
+0%,100% 
+{
+text-shadow: 
+0 0 1px #F400F0, 
+0 0 3px #F400F0, 
+0 0 5px #F400F0, 
+0 0 5px #F400F0, 
+0 0 .4px #8BFDFE, 
+.5px .5px .1px #F400F0;
+color: #FF00E9;
+}
+50% 
+{
+text-shadow: 
+0 0 .5px #800E0B, 
+0 0 1.5px #800E0B, 
+0 0 5px #800E0B, 
+0 0 5px #800E0B, 
+0 0 .2px #800E0B, 
+.5px .5px .1px #40340A;
+color: #FF70F3;
+}
+}
+
+/* 검색폼 보더 */
+
+header #right-search-form>input[type='text'] {
+  border: 3px solid 	#87CEFA;
+}
+
+/* 트게더 전체메뉴 / 유용한링크 / 트위치 스케쥴 */
+
+#main .menu-wrapper>.header {
+  background: #87CEFA	;
+}
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  color: white;
+}
+
+.fa-square:before {
+  color: 	#87CEFA;
+}
+
+header #header-bar>.row,
+#main .menu-wrapper,
+#main #main-content>div.frame {
+  border-right: none;
+  border-bottom: none;
+}
+
+#main .menu-wrapper {
+  border: none;
+}
+
+/* 헤더 검색 버튼 */
+
+header #right-search-form>#right-search-btn {
+  color: 	#87CEFA;
+}
+
+/* 헤더 [광고]배경색 */
+
+header #header-bar #header-top-notice strong.notice-badge {
+  background: #87CEFA	;
+}
+
+/* fa색상 */
+
+header #header-bar .fa {
+  color: 	#87CEFA;
+}
+
+/* 스트리머 게시판 상단 정보 글씨색상 */
+
+#board-info #board-info-bottom a {
+  color: #87CEFA	;
+}
+
+/* 눈 오는 애니메이션*/
+
+#content-area
+{
+z-index: 999;
+height: auto;
+background-image: url('https://github.com/cksrjfl/cksrjfl/blob/master/snowflake_BG_1.png?raw=true');
+-webkit-animation: Background_IMG_Snow_Ver 20s linear infinite;
+-moz-animation: Background_IMG_Snow_Ver 20s linear infinite;
+-ms-animation: Background_IMG_Snow_Ver 20s linear infinite;
+animation: Background_IMG_Snow_Ver 20s linear infinite;
+}
+
+@keyframes Background_IMG_Snow_Ver
+{
+0% {background-position: 0px 0px, 400px 400px, 300px 300px;}
+100% {background-position: 300px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes Background_IMG_Snow_Ver
+{
+0% {background-position: 0px 0px, 400px 400px, 300px 300px;}
+100% {background-position: 300px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes Background_IMG_Snow_Ver
+{
+0% {background-position: 0px 0px, 400px 400px, 300px 300px;}
+100% {background-position: 300px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes Background_IMG_Snow_Ver
+{
+0% {background-position: 0px 0px, 400px 400px, 300px 300px;}
+100% {background-position: 300px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+/* 게시판 상주 인원 표시 접두 부분 */
+
+#board-info #viewers-area #viewers:before {content: "방울단 ";
+    cursor: text}
+
+
+/* 게시판 상주 인원 표시 윗 부분 표시 */
+
+#board-info #viewers-area #viewers:after {content: "명 방울 달고 대기중";
+    cursor: text}
+
+
+
+/* 좌측메뉴 숏컷링크 글씨 색상 */
+
+#main .menu-wrapper>a>em {
+  color: 	#87CEFA;
+}
+
+/* 좌측메뉴 메뉴사이의 공간 색상 */
+
+#main .menu-wrapper .spacer {
+  background: 	#87CEFA;
+  height: 0.15em;
+}
+
+/* 게시글 관련부분 */
+
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+  width: 120px !important;
+}
+
+#article-list #article-list-category {
+  border-top: 2px solid #87CEFA	;
+  background: white;
+}
+
+#article-list #article-list-category>a {
+  background: white;
+}
+
+#article-list>.article-list-row>.item>.list-header>span {
+  background-color: #87CEFA	;
+}
+/* 리스트 글 댓글 수 카운트 */
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count {
+  color: #87CEFA	;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+  color: #87CEFA	;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  background-color: #87CEFA	;
+  border-color: #87CEFA	;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  color: #87CEFA	;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  color: #87CEFA	;
+}
+
+#article-content-wrapper>.header {
+  border-top: 2px solid #87CEFA	;
+}
+
+#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
+#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged {
+  color: #87CEFA	;
+}
+
+#article-info>h2 {
+  font-weight: bold;
+}
+
+#article-info>h2>span.category {
+  color: #87CEFA	 !important;
+}
+
+#article-reply-area>.header h5 {
+  color: #87CEFA	;
+}
+
+#main .menu-wrapper>a {
+  padding: 0.5em 1.4em 0.5em 0.7em !important;
+}
+
+a {
+  color: #87CEFA	;
+}
+
+span.a-badge i.fa.fa-info-circle {
+  color: #87CEFA	;
+}
+
+/* footer */
+
+#article-list>.article-list-row {
+  border-right: none;
+}
+
+#article-list #article-list-menu {
+  box-sizing: border-box;
+  width: unset;
+  margin: 20px;
+}
+
+#article-list #boardSearchForm {
+  padding-bottom: 20px;
+  height: unset;
+}
+
+.btn-primary {
+  background: 	#87CEFA !important;
+}
