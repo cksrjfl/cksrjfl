@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo:700&display=swap&subset=korean');
+
+/* 트게더 로고 삭제 밑 재설정*/
+header .row > div:nth-child(1) > a > img { display:none; }
+header .row > div:nth-child(1) > a { position:relative; text-decoration:none; }
+header .row > div:nth-child(1) > a::before 
+{ 
+content:'솔게더';
+height: 50px;
+display:block;
+font-size: 50px;
+margin: 0 0 0 35px;
+color:#FFE2E2 ; 
+text-shadow: 3px 3px 5px #14148C;
+line-height:1.2;font-family: 'Nanum Pen Script', cursive; 
+
+animation: Logo_Title 1.5s linear infinite;
+-moz-animation: Logo_Title 1.5s linear infinite;
+-webkit-animation: Logo_Title 1.5s linear infinite;
+-o-animation: Logo_Title 1.5s linear infinite;
+}
+/*로고 네온 샤인 애니메이션*/
+@keyframes Logo_Title
+{
+0%,100% 
+{
+text-shadow: 
+0 0 1px #FFFFFF, 
+0 0 3px #FFFFFF, 
+0 0 5px #FFFFFF, 
+0 0 5px #FFFFFF, 
+0 0 .4px #8BFDFE, 
+.5px .5px .1px #147280;
+color: #FFE2E2 ;
+}
+50% 
+{
+text-shadow: 
+0 0 .5px #0b35d6, 
+0 0 1.5px #0b35d6, 
+0 0 5px #0b35d6, 
+0 0 5px #0b35d6, 
+0 0 .2px #0b35d6, 
+.5px .5px .1px #0A3940;
+color: #FFE2E2 ;
+}
+}
+
+/*로고 옆 검색창 */
+header #right-search-form>input[type=text]
+{
+border: 3px solid #FFE2E2 ;
+}
+/* 해더 바 */
+header #header-bar>.row 
+{
+border-top: 5px solid #FFE2E2 ;
+border-bottom: 2px solid white;
+border-right: 2px solid white;
+}
+
+/* 게시판 투명도 */
+#main #main-content>div.frame
+{
+opacity: 0.95;
+}
+/*글쓰기 해더 2종*/
+#main .menu-wrapper>.header 
+{
+background: #FFE2E2 ;
+}
+#article-list
+{
+background: #FFE2E2 ;
+}
+ #article-list-category
+{
+background: #FFE2E2 ;
+}
+#article-list-category > a.active
+{
+background: #FFE2E2 ;
+}
+
+/*배경색*/
+body
+{
+font-family: 'Nanum Myeongjo', serif;
+background-image: linear-gradient(#EF4747 2% ,#F5BCBC 10% , #FFE2E2 , white 90%);
+height: auto;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*트게더 전체 메뉴 빈 공간 색*/
+#main .menu-wrapper .spacer 
+{
+    background: #FFE2E2 ;
+}
+
+
+
+#article-list #article-list-category > a.active, #article-list #article-list-category>a:hover 
+{
+    background: #FFE2E2 ;
+}
+
+#article-list #article-list-category
+{
+    border-top: 2px solid #FFE2E2 ;
+}
